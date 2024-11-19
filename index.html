@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Echo</title>
+  </head>
+  <body>
+   <div class="main">
+    <div class="container">
+      <p class="heading">Echo</p>
+      <div class="options">
+        <div class="anguage">
+          <p>Language</p>
+          <select name="input-language" id="language"></select>
+        </div>
+      </div>
+      <div class="line"></div>
+      <button class="btn record">
+        <div class="icon">
+          <ion-icon name="mic-outline"></ion-icon>
+          <img src="bars.svg" alt="" />
+        </div>
+        <p>Start Listening</p>
+      </button>
+      <p class="heading">Result :</p>
+      <div
+        class="result"
+        spellcheck="false"
+        placeholder="Text will be shown here"
+      >
+        <p class="interim"></p>
+      </div>
+      <div class="buttons">
+        <button class="btn clear">
+          <ion-icon name="trash-outline"></ion-icon>
+          <p>Clear</p>
+        </button>
+        <button class="btn download" disabled>
+          <ion-icon name="cloud-download-outline"></ion-icon>
+          <p>Download</p>
+        </button>
+      </div>
+    </div>
+    <div class="small">
+      <h2>Introduction to Echo Speech-to-Text Tool for the Visually Impaired</h2>
+      <br><p>
+        This Speech-to-Text Tool is designed to empower blind and visually impaired individuals by converting spoken words into written text. Its features include:
+      </p><br>
+      <ul>
+        <li>
+          <strong>Real-Time Voice Transcription:</strong> Instantly converts speech into text, ensuring a seamless experience for capturing ideas and conversations.
+        </li>
+        <li>
+          <strong>Multi-Language Support:</strong> Allows users to select their preferred language, catering to diverse linguistic needs.
+        </li>
+        <li>
+          <strong>Easy-to-Use Interface:</strong> Features a simple design with clear audio cues, minimizing visual complexity for enhanced accessibility.
+        </li>
+        <li>
+          <strong>Downloadable Text Files:</strong> Enables users to save transcriptions as <code>.txt</code> files for future reference or sharing.
+        </li>
+        <li>
+          <strong>Error Handling and Guidance:</strong> Provides clear audio alerts for issues such as:
+          <ul>
+            <li>Microphone problems.</li>
+            <li>No speech detection.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Enhanced Accessibility:</strong> Designed to boost independence and productivity for blind individuals, supporting tasks in personal, educational, and professional settings.
+        </li>
+      </ul><br><br>
+      <p class="foot">
+        This tool represents a step toward inclusive technology, prioritizing accessibility and equality for all users.
+      </p>
+    </div>
+   
+   </div>
+   <footer class="footer">
+    made with love by Navneet Singh 💗 for community support 
+   </footer>
+
+    <!-- IONICONS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- LANGUAGES -->
+    <script src="languages.js"></script>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+  </body>
+</html>

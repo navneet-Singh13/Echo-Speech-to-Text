@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --primary-color: #00065f;
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --light-text-color: #a5a5a5;
+  --body-bg-color: #f5f7fa;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --hover-color: #274cb7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://media.wired.com/photos/649b45f1c30f50376ee875a4/master/pass/business_gpt4_ai_google_glass_blind.jpg");
+  color: var(--text-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.main{ 
+  display: flex;
+  
+  row-gap: 40px;
+}
+.small{ 
+  max-width: 1000px ;
+  row-gap: 10px;
+  min-width: 500px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  color: #000000;
+  font-weight: 500;
+  margin: 10px;
+  width: 100%;
+  font-size: 20px;
+}
+.foot{ 
+  color: #0044d6;
+}
+.container {
+   max-width: 800px;
+  min-width: 500px;
+  margin: 10px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media only screen and (max-width: 1200px) {
+  .main{ 
+    flex-direction: column;
+    width: 100vw;
+   
+  }
+  .container{ 
+    margin-top: 60px;
+    max-width: 100%;
+   
+  }
+  .small{ 
+    width: 100%;
+    align-items: center;
+    max-width: 100%;
+  }
+  
+  .footer{ 
+    padding: 5px;
+    margin-left: 0%;
+    text-align: left;
+  }
+  
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+.container .heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.container .options p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.container .options select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.container .options select:hover {
+  border-color: var(--primary-color);
+}
+
+.container .line {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-text-color);
+  opacity: 0.5;
+  margin: 30px 0;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  height: 50px;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+.btn:disabled {
+  background-color: var(--light-text-color);
+  cursor: not-allowed;
+}
+
+.container .record img {
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+
+.container .record.recording img {
+  display: block;
+}
+
+.container .record.recording ion-icon {
+  display: none;
+}
+
+.container .result {
+  width: 100%;
+  min-height: 400px;
+  padding: 15px;
+  border: 1px solid var(--light-text-color);
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  background-color: var(--body-bg-color);
+  overflow-y: auto;
+}
+
+.container .result p {
+  display: inline;
+  margin-left: 3px;
+  color: var(--light-text-color);
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.buttons button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+}
+
+.buttons button:disabled {
+  background-color: var(--light-text-color);
+  cursor: not-allowed;
+}
+.footer { 
+  padding: 10px;
+  background-color: #ffffff;
+  font-weight: 800;
+ 
+  
+}
